@@ -17,7 +17,7 @@ rss:
 #since: 2015
 
 # Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
-# See: https://support.google.com/webmasters/answer/139066
+# See: hUnicodeDecodeError: 'utf-8' codec can't decode bytes in positionttps://support.google.com/webmasters/answer/139066
 # Tips: Before you open this tag, remeber set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
 canonical: true
 
@@ -29,11 +29,13 @@ canonical: true
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
+  categories: /categories
+  about: /about
   archives: /archives
   tags: /tags
-  #commonweal: /404.html
+  commonweal: /404.html
+  notes: /categories/notes
+  python: /categories/编程/Python/
 
 
 # Enable/Disable menu icons.
@@ -60,8 +62,8 @@ menu_icons:
 
 # Schemes
 # scheme: Muse
-#scheme: Mist
-scheme: Pisces
+scheme: Mist
+# scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -77,11 +79,13 @@ font:
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
   host:
+    //fonts.useso.com
 
   # Global font settings used on <body> element.
   global:
     # external: true will load this font family from host.
-    external: true
+    # external: true
+    external: false
     family: Lato
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
@@ -141,7 +145,8 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar:
+  /images/ddq.s8.jimmy.logo.png
 
 
 # Table Of Contents in the Sidebar
@@ -201,7 +206,8 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+# highlight_theme: normal
+highlight_theme: night bright
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
@@ -238,10 +244,12 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics:
+  75487946c7d601c967c9aa6c153415dd
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname:
+  agogm
 
 # Disqus
 #disqus_shortname:
@@ -250,7 +258,8 @@ mathjax:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
+baidushare:
+  tru
 ##  type: button
 
 # Share
