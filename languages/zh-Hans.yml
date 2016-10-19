@@ -16,9 +16,7 @@ menu:
   search: 搜索
   commonweal: 公益404
   something: 有料
-  notes: 分类/notes
-  python: 分类/编程/Python/
-
+  # notes: 分类/notes
 
   # categories: /categories
 

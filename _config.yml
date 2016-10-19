@@ -14,7 +14,7 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2015
 
 # Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
@@ -34,8 +34,8 @@ menu:
   archives: /archives
   tags: /tags
   commonweal: /404.html
-  notes: /categories/notes
-  python: /categories/编程/Python/
+  # notes: /categories/notes
+  # search: /search
 
 
 
@@ -65,8 +65,8 @@ menu_icons:
 
 # Schemes
 # scheme: Muse
-scheme: Mist
-# scheme: Pisces
+# scheme: Mist
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -128,8 +128,14 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+social:
   #LinkLabel: Link
+  GitHub: https://github.com/yssource
+  Twitter: https://twitter.com/yssource
+  微博: http://weibo.com/yssource
+  豆瓣: http://douban.com/people/yssource
+  知乎: http://www.zhihu.com/people/yssource
+  # 等等
 
 
 # Social Links Icons
@@ -263,7 +269,7 @@ duoshuo_shortname:
 #    button | slide
 # Warning: Baidu Share does not support https.
 baidushare:
-  true
+  false
 ##  type: button
 
 # Share
@@ -272,7 +278,7 @@ baidushare:
 #add_this_id:
 
 # Share
-#duoshuo_share: true
+duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -318,9 +324,9 @@ facebook_comments_plugin:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: Awl16umaEN9huYbBjlMURHie-gzGzoHsz
+  app_key: R8Wi8EyEG5EUuwgb6zM9dqNX
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -426,3 +432,34 @@ images: images
 
 # Theme version
 version: 5.0.2
+
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: /path/to/wechat-reward-image
+alipay: /path/to/alipay-reward-image
+
+# Wechat Subscriber
+wechat_subscriber:
+  enabled: true
+  qcode: /uploads/wechat-qcode.jpg
+  description: 欢迎您扫一扫上面的微信公众号，订阅我的博客！
+
+index_generator:
+  per_page: 5
+
+archive_generator:
+  per_page: 20
+  yearly: true
+  monthly: true
+
+tag_generator:
+  per_page: 10
+
+# Algolia Search
+algolia_search:
+  enable: true
+  hits:
+    per_page: 10
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}"
+    hits_stats: "${hits} results found in ${time} ms"
