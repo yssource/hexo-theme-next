@@ -73,5 +73,6 @@
   {% include '_scripts/baidu-push.swig' %}
   {% include '_scripts/third-party/schedule.swig' %}
 
+  <!-- {% include '_scripts/doLazyload.swig' %} -->
 </body>
 </html>
